@@ -13,6 +13,20 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/post", (req, res) => {
+  res.render("post.ejs", {
+    year: new Date().getFullYear(),
+  });
+});
+
+app.post("/submit", (req, res) => {
+  res.render("index.ejs", {
+    title: blogTitle,
+    post: blogPost,
+    year: new Date().getFullYear(),
+  });
+});
+
 app.listen(port, () => {
   console.log(`Server is running on ${port}`);
 })
