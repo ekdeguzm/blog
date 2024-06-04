@@ -6,7 +6,7 @@
       <div class="content col-12 col-xxl-8 col-xl-8 p-4">
         <% if (posts.length === 0) { %>
         <div class="text-center">
-          <h3></h3>
+          <h3>Uh oh. There are no posts!</h3>
         </div>
         <% } else { %>
         <ul class="p-0">
@@ -16,7 +16,7 @@
             <h3 class="fs-2 pt-serif">
               <a href="/view/<%= posts.indexOf(post) %>"><%= post.title %></a>
             </h3>
-            <p class="fs-5 my-4"><%= post.content %></p>
+            <p class="fs-6 my-4"><%= post.content %></p>
             <hr />
           </li>
           <% }); %>

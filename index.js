@@ -47,6 +47,18 @@ app.get("/view/:id", (req, res) => {
     postId: index,
     title: post.title,
     content: post.content,
+    posts: posts,
+  });
+});
+
+// Search function
+app.post("/search", (req, res) => {
+  const searchInfo = req.body.info;
+
+  console.log(searchInfo);
+
+  res.render("index.ejs", {
+    nameLength: nameLength,
   });
 });
 
@@ -82,11 +94,13 @@ app.post("/save", (req, res) => {
   res.redirect("/");
 });
 
-app.post("/submit", (req, res) => {
-  res.render("index.ejs", {
-    title: blogTitle,
-    post: blogPost,
-  });
+// Update
+app.post("/update", (req, res) => {
+  let title = req.body["title"];
+  let content = req.body["content"];
+  let index = req.body["index"];
+  editPost(index, title, content);
+  res.redirect("/");
 });
 
 app.listen(port, () => {

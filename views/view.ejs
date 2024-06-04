@@ -4,7 +4,13 @@
   <div class="container my-5">
     <div class="row justify-content-center">
       <div class="content col-lg-8 col-12 p-4">
-        <h1><%= title %></h1>
+        <ul class="p-0">
+          <li class="p-1">
+            <p class="fs-6 fw-light"><%= posts[postId].date %></p>
+          </li>
+        </ul>
+        <h2><%= title %></h2>
+        <br />
         <p><%= content %></p>
       </div>
       <div
