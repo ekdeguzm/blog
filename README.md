@@ -126,7 +126,7 @@ Contributions are always welcome! Please follow these steps to contribute:
 
 ## License
 
-This is licensed under the MIT License Copyright (c) 2024.
+This is licensed under MIT License Copyright (c) 2024.
 
 See the [LICENSE](https://github.com/ekdeguzm/blog/blob/main/LICENSE) for information on the history of this software, terms & conditions for usage, and a DISCLAIMER OF ALL WARRANTIES.
 
