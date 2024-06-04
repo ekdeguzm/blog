@@ -1,5 +1,9 @@
 # Bog Blog
 
+<div align="center">
+    <img alt="Screenshot" src="./public/images/bog-blog.png" height="600px">
+</div>
+
 Bog Blog is a simple web application that allows users to create and search for blog posts. The application is built using Express, EJS, and Node.js, and uses Nodemon for development.
 
 ## Table of Contents
