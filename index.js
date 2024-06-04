@@ -30,6 +30,7 @@ function editPost(index, title, content) {
   posts[index] = new Post(title, content);
 }
 
+
 // Middleware
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -53,12 +54,14 @@ app.get("/view/:id", (req, res) => {
 
 // Search function
 app.post("/search", (req, res) => {
-  const searchInfo = req.body.info;
+  const searchInfo = req.body.info.toLowerCase(); // Convert search info to lowercase for case-insensitive search
+  const filteredPosts = posts.filter(post => post.title.toLowerCase().includes(searchInfo));
 
-  console.log(searchInfo);
+  // search if searchInfo is in the posts array.
 
-  res.render("index.ejs", {
-    nameLength: nameLength,
+  res.render("search.ejs", {
+    searchInfo: searchInfo,
+    posts: filteredPosts
   });
 });
 
