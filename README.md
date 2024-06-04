@@ -128,6 +128,6 @@ Contributions are always welcome! Please follow these steps to contribute:
 
 My Space Invaders project is licensed under the MIT License Copyright (c) 2024.
 
-See the [LICENSE](https://github.com/ekdeguzm/space_invaders/LICENSE) for information on the history of this software, terms & conditions for usage, and a DISCLAIMER OF ALL WARRANTIES.
+See the [LICENSE](https://github.com/ekdeguzm/blog/blob/main/LICENSE) for information on the history of this software, terms & conditions for usage, and a DISCLAIMER OF ALL WARRANTIES.
 
 All trademarks referenced herein are property of their respective holders.
