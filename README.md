@@ -18,7 +18,7 @@ Bog Blog is a simple web application that allows users to create and search for 
 
 ## Introduction
 
-Bog Blog is designed to help users explore and share information about foraging in bogs. Users can create blog posts, view posts, and search for specific posts using a search bar.
+Bog Blog is designed to help users explore and share information about foraging in bogs. Users can create blog posts about anything, view posts, and search for specific posts using a search bar. I wanted to make this project to understand client and server interactions.
 
 ## Features
 
